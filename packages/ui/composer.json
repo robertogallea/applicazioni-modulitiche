@@ -1,0 +1,20 @@
+{
+    "name": "talk/ui",
+    "type": "library",
+    "description": "ui package",
+    "require": {
+        "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\Ui\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\Ui\\UiServiceProvider"
+            ]
+        }
+    }
+}

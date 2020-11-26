@@ -1,0 +1,27 @@
+{
+    "name": "talk/core",
+    "type": "library",
+    "description": "core package",
+    "require": {
+        "orchestra/testbench": "*",
+        "talk/domain": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\Core\\CoreServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/roberto/code/laravelday/2020/talk/packages/domain"
+        }
+    ]
+}

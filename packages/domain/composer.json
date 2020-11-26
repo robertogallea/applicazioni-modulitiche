@@ -1,0 +1,20 @@
+{
+    "name": "talk/domain",
+    "type": "library",
+    "description": "model package",
+    "require": {
+        "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\Domain\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\Domain\\DomainServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "talk/dbaccess",
+    "type": "library",
+    "description": "model package",
+    "require": {
+        "orchestra/testbench": "*",
+        "talk/domain": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\DBAccess\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\DBAccess\\DBAccessServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/roberto/code/laravelday/2020/talk/packages/domain"
+        }
+    ]
+}

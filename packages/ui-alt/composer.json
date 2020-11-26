@@ -1,0 +1,20 @@
+{
+    "name": "talk/ui-alt",
+    "type": "library",
+    "description": "ui package",
+    "require": {
+        "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\UiAlt\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\UiAlt\\UiServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "talk/apiaccess",
+    "type": "library",
+    "description": "api access package",
+    "require": {
+        "orchestra/testbench": "*",
+        "talk/domain": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\APIAccess\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Talk\\APIAccess\\APIAccessServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../domain"
+        }
+    ]
+}
